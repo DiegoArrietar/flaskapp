@@ -1,0 +1,1 @@
+SQLALCHEMY_DATABASE_URI = "postgresql://diego:naFra6ew@localhost/flask"

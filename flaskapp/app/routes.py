@@ -1,12 +1,7 @@
-from flask import Flask, render_template
+from flask import render_template
+from app.views.login import login, about
 from app import app
 
+app.add_url_rule('/login', view_func=login)
+app.add_url_rule('/about', view_func=about)
 
-@app.route('/')
-def home():
-    return render_template('home.html')
-
-
-@app.route('/about')
-def about():
-    return render_template('about.html')
